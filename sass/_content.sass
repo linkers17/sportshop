@@ -1,0 +1,150 @@
+.content
+   display: flex
+   justify-content: space-between
+
+   .interface
+      flex-basis: 64%
+
+      &__box
+         padding: 15px 20px
+
+      &-title
+         font-size: 1.1em
+
+      &__title
+         margin: 0
+         margin-bottom: 15px
+
+      &-subtitle
+         font-size: 0.95em
+
+      &__subtitle
+         margin: 20px 0 10px
+
+      &__menu
+         margin-bottom: 20px
+
+      &-menu
+
+         &__list
+            display: flex
+            justify-content: space-around
+
+         &__item
+            flex-basis: 20%
+
+      &__datetime
+         font-size: 0.9em
+
+      &__list
+
+      &__item
+         position: relative
+         margin: 20px 0
+         font-size: 0.7em
+         text-align: justify
+         line-height: 1.5
+
+         &:not(:last-child)
+
+            &:after
+               content: ''
+               position: absolute
+               height: 1px
+               width: 60%
+               background-color: #000
+               display: block
+               left: 50%
+               bottom: -10px
+               transform: translateX(-50%)
+
+      &__table
+         margin-top: 20px
+      
+      &-table
+         font-size: 0.65em
+
+         &__title
+            font-size: 1.2em
+            font-weight: 700
+            margin-bottom: 20px
+
+         &__head
+            display: flex
+            background-color: #444
+            color: #fff
+            font-weight: 700
+            padding: 12px 0
+
+         &__row
+            display: flex
+            padding: 12px 0
+            align-items: center
+
+            &:nth-child(odd)
+               background-color: #fff
+
+            &:nth-child(even)
+               background-color: #ccc
+
+         &__col
+            flex-basis: 23.3%
+
+            &_sm
+               flex-basis: 6%
+
+   .menu
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-basis: 30%
+
+      &__wrapper
+         width: 100%
+         padding: 20px
+
+      &__item
+         margin-bottom: 15px
+
+         &:last-child
+            margin-bottom: 0
+
+      &__link
+         width: 75%
+         margin: auto
+
+.form
+
+   &__row
+      margin-bottom: 20px
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+      &:last-child
+         margin-bottom: 0
+
+   &__label
+      font-size: 0.85em
+
+   &__input
+      font-size: 0.8em
+      padding: 5px 10px
+      width: 50px
+
+      &-wrapper
+         position: relative
+
+      &_text
+         width: 300px
+
+   &__btn
+      margin-top: 20px
+      padding: 15px 20px
+
+.goods
+   line-height: 1.5
+
+   &__find
+      display: block
+      text-decoration: underline

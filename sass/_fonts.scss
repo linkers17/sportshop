@@ -1,0 +1,13 @@
+@font-face {
+   font-family: 'Co';
+   src: local('Co Text Corp Regular'), local('Co-Text-Corp-Regular'),
+       url('./../fonts/CoTextCorp-Regular.woff2') format('woff2'),
+       url('./../CoTextCorp-Regular.woff') format('woff'),
+       url('./../CoTextCorp-Regular.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+}
+
+@mixin reg {
+   font-family: 'Co', Arial, Helvetica, sans-serif;
+}

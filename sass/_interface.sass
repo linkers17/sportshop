@@ -1,0 +1,155 @@
+*
+   &:focus
+      outline: none
+   
+body
+   background: #fff url('./../img/bg.jpg') no-repeat
+   background-size: cover
+   background-attachment: fixed
+   font-size: 22px
+   +reg
+
+.container
+   width: 1200px
+   max-width: 1200px
+   margin: auto
+
+img
+   max-width: 100%
+
+ul, li
+   list-style: none
+   padding: 0
+   margin: 0
+
+select
+   font-size: 0.7em
+   padding: 5px 10px
+
+div.error
+   position: absolute
+   top: 50%
+   transform: translateY(-50%)
+   right: 105%
+   color: #fff
+   background-color: #ec0000
+   border: 1px solid #b81010
+   border-radius: 5px
+   padding: 5px
+   font-size: 0.55em
+   width: 170px
+
+   &:after
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 3px 0 3px 10px
+      border-color: transparent transparent transparent #b81010
+      top: 50%
+      transform: translateY(-50%)
+      right: -11px
+
+.box
+   text-align: center
+   border: 2px solid #fff
+   background-color: rgba(255, 255, 255, 0.8)
+   border-radius: 15px
+
+.username
+   display: block
+
+.message
+   font-size: 0.75em
+   padding: 10px 30px
+   border-radius: 10px
+   border-style: solid
+   border-width: 1px
+   display: inline-block
+   margin: 10px 0
+
+   &_success
+      color: #1a801a
+      background-color: #7ef77e
+      border-color: #53be53
+
+   &_error
+      color: #801a1a
+      background-color: #f77e7e
+      border-color: #be5353
+
+
+.btn
+   display: block
+   font-size: 0.65em
+   text-decoration: none
+   opacity: 0.7
+   border-width: 2px
+   border-style: solid
+   border-top-left-radius: 10px
+   border-bottom-right-radius: 10px
+   cursor: pointer
+   padding: 10px 0
+   transition: 0.3s
+
+   &__submit
+      margin: 20px auto 0
+      padding-right: 20px
+      padding-left: 20px
+
+   &_blue
+      border-color: #00f
+      background-color: #00f
+      color: #fff
+
+      &:hover
+         background-color: #fff
+         color: #00f
+         border-top-left-radius: 0
+         border-bottom-right-radius: 0
+         border-top-right-radius: 10px
+         border-bottom-left-radius: 10px
+         opacity: 1
+
+   &_red
+      border-color: #ff0d0d
+      background-color: #ff0d0d
+      color: #fff
+
+      &:hover
+         background-color: #fff
+         color: #ff0d0d
+         border-top-left-radius: 0
+         border-bottom-right-radius: 0
+         border-top-right-radius: 10px
+         border-bottom-left-radius: 10px
+         opacity: 1
+
+   &_green
+      background-color: #13af09
+      color: #fff
+      border-color: #13af09
+
+      &:hover
+         background-color: #fff
+         color: #13af09
+         border-top-left-radius: 0
+         border-bottom-right-radius: 0
+         border-top-right-radius: 10px
+         border-bottom-left-radius: 10px
+         opacity: 1
+
+   &_yellow
+      background-color: #fbf413
+      color: #333
+      border-color: #fbf413
+
+      &:hover
+         background-color: #fff
+         color: #000
+         border-top-left-radius: 0
+         border-bottom-right-radius: 0
+         border-top-right-radius: 10px
+         border-bottom-left-radius: 10px
+         opacity: 1
